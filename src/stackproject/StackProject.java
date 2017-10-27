@@ -18,13 +18,14 @@ public class StackProject {
      */
     public static void main(String[] args) {
         myStack<String> leStack = new myStack<>();
-        leStack.push("Test1");
-        leStack.push("Test2");
-        leStack.push("Test3");
-        System.out.println(leStack.pop());
-        System.out.println(leStack.pop());
-        System.out.println(leStack.pop());
-        System.out.println(leStack.pop());
+        
+        for(int i = 1; i < 4; i++)//Tests the push method through a for loop.
+            leStack.push("Test" + i);
+        
+        for(int i = 0; i < leStack.getSize();)//Tests the pop method through a loop.
+           System.out.println(leStack.pop());
+        
+        System.out.println(leStack.pop());//Tests the error that prints when the stack is empty.
     }
     
     
