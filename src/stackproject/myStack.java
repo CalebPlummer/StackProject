@@ -14,9 +14,7 @@ import java.util.ArrayList;
 public class myStack<T> {
     
     private ArrayList<T> list = new ArrayList<>();
-    
-    public myStack() {
-    }
+
     public void push(T input)
     {
         list.add(input);
@@ -36,5 +34,10 @@ public class myStack<T> {
             System.out.println("There is nothing left on the stack to pop off.");
         }
         return null;
+    }
+    
+    public int getSize()
+    {
+        return list.size();
     }
 }
