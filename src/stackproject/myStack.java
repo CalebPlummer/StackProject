@@ -24,9 +24,17 @@ public class myStack<T> {
     
     public T pop()
     {
-        T tmp = list.get(list.size()-1);
-        list.remove(list.size()-1);
-        return tmp;
         
+        try
+        {
+           T tmp = list.get(list.size()-1);
+           list.remove(list.size()-1);
+           return tmp; 
+        }
+        catch(Exception e)
+        {
+            System.out.println("There is nothing left on the stack to pop off.");
+        }
+        return null;
     }
 }

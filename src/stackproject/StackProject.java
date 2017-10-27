@@ -18,9 +18,10 @@ public class StackProject {
      */
     public static void main(String[] args) {
         myStack<String> leStack = new myStack<>();
-        leStack.push("Test");
+        leStack.push("Test1");
         leStack.push("Test2");
         leStack.push("Test3");
+        System.out.println(leStack.pop());
         System.out.println(leStack.pop());
         System.out.println(leStack.pop());
         System.out.println(leStack.pop());
